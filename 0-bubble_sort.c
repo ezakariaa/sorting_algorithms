@@ -3,10 +3,7 @@
  *bubble_sort - function that sorts an array of integers from min to max value
  *@array: an array
  *@size: array´s size
- *Return: nothing
  */
-
-
 void bubble_sort(int *array, size_t size)
 {
 	size_t i, j;
