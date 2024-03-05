@@ -1,7 +1,5 @@
 #include "sort.h"
 
-#define UP 0
-#define DOWN 1
 
 /**
  * swap_ints - swaps two integers.
@@ -49,7 +47,8 @@ void merge_bito(int *array, size_t size, size_t beg, size_t size_seq,
  * @size_seq: The size of a block of the building bitonic sequence.
  * @direc: The direction to sort the bitonic sequence block in.
  */
-void convert_bito(int *array, size_t size, size_t beg, size_t size_seq, char direc)
+void convert_bito(int *array, size_t size, size_t beg, size_t size_seq,
+		char direc)
 {
 	size_t cut = size_seq / 2;
 	char *str = (direc == UP) ? "UP" : "DOWN";
